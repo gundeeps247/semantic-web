@@ -3,9 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Dairy</title>
+    <title>Training Report</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: linear-gradient(60deg, #ffb3b3, #99ccff);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            width: 100%;
+            font-family: 'Verdana', sans-serif;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-content {
+            text-align: center;
+        }
+        .logo {
+            flex-grow: 0;
+        }
+        .title {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .info {
+            flex-grow: 0;
+            text-align: right;
+        }
+        footer p {
+            margin: 0;
+            font-size: 12px;
+        }
+        h1 {
+            color: #f1f1f1;
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 1000px;
+            margin: 30px auto;
+            border-radius: 12px;
+        }
+        ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            margin: 12px 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        ul li a:hover {
+            color: #000;
+        }
+        .report-button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        .report-button:hover {
+            background-color: #45a049;
+        }
+        .logo img {
+            height: 80px;
+        }
+        .info {
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <a href="./dairy/day-1.html">Day 1</a>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/tr-103_gundeep/assets/gne.png" alt="Logo">
+                </div>
+                <div class="title">
+                    <h1>TR-103 (Semantic Web)</h1>
+                </div>
+                <div class="info">
+                    <div>Name: Gundeep Singh</div>
+                    <div>URN: 2104100</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <ul>
+            <li>
+                <a href="Day1/Pages/index.html">Day 1: Basic HTML, Github introduction.</a>
+                <a href="/tr-103_gundeep/assets/reports/day1.pdf" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="Day2/html/index.html">Day 2: Concept of float, class and id.</a>
+                <a href="/tr-103_gundeep/assets/reports/day2.pdf" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="Day2-Food_Website/html/index.html">Day 2 HW: Food Website Template.</a>
+                <!-- <a href="Day2-Food_Website/report.pdf" class="report-button" target="_blank">Show Report</a> -->
+            </li>
+            <li>
+                <a href="Day3/class_project/html/index.html">Day 3: Concept of fluidity introduced.</a>
+                <a href="/tr-103_gundeep/assets/reports/day3.pdf" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="Day3-HomeWrk/pages/index.html">Day 3 HW: Designed a webpage of a travel company.</a>
+                <!-- <a href="Day3-HomeWrk/report.pdf" class="report-button" target="_blank">Show Report</a> -->
+            </li>
+            <li>
+                <a href="">Day 4: Introduction to RDF.</a>
+                <a href="/tr-103_gundeep/assets/reports/day4.pdf" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="Day5/pages/index.html">Day 5: Performance of Webpage. (Page Insights, Lighthouse)</a>
+                <a href="" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="">Day 6: </a>
+                <a href="" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="">Day 7: </a>
+                <a href="" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="">Day 8: </a>
+                <a href="" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="">Day 9: </a>
+                <a href="" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="">Day 10: </a>
+                <a href="" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="">Day 11: </a>
+                <a href="" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="">Day 12: </a>
+                <a href="" class="report-button" target="_blank">Show Report</a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
