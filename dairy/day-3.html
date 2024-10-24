@@ -3,123 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Diary</title>
+    <title>Daily Diary - Day 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin-top: 400px;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #c7e8e7, #87d0e3f2);
+            margin-top: 600px;
+            padding: 20px;
         }
         .content-box {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 1200px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
             width: 100%;
+            animation: fadeIn 1s ease-in-out;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
         h1 {
             text-align: center;
-            color: #333;
+            color: #007BFF;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
         }
+
         p {
-            line-height: 1.6;
+            line-height: 1.8;
             color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
         }
+
         .button-container {
             text-align: center;
             margin-top: 20px;
         }
+
         .action-button {
-            padding: 10px 20px;
+            padding: 12px 25px;
             font-size: 16px;
             color: #fff;
             background-color: #007BFF;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
+            margin: 5px;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
         }
+
         .action-button:hover {
             background-color: #0056b3;
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+            transform: translateY(-3px);
+        }
+
+        .action-button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-box {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="content-box">
         <h1>Day 3</h1>
-    
         <p>
-            U l i a<br><br>
-            
-            Navigation bar:<br>
+            <strong>U l i a</strong><br><br>
+
+            <strong>Navigation bar:</strong><br>
             How to make it:<br>
             - Use lists instead of anchor tags for better structure.<br><br>
-            
-            How to make nav bar:<br>
+
+            <strong>How to make nav bar:</strong><br>
             - Class user defined.<br>
             - Li anchor tag.<br>
             - Properties for nav bar in CSS.<br>
             .nav bar ul {<br>
             List style.<br><br>
-            
-            Text doc:<br>
+
+            <strong>Text doc:</strong><br>
             - Margin and padding.<br>
             - Padding space text and home.<br><br>
-            
-            Margin space between elements:<br>
+
+            <strong>Margin space between elements:</strong><br>
             - 4 directions clockwise.<br>
-            - Padding 20 px 4 sides.<br><br>
-            
-            TRBL - Clockwise.<br><br>
-            
-            Box model:<br><br>
-            
-            Fluid model:<br>
+            - Padding 20px 4 sides.<br><br>
+
+            <strong>TRBL</strong> - Clockwise.<br><br>
+
+            <strong>Box model:</strong><br><br>
+
+            <strong>Fluid model:</strong><br>
             - Automatically adjusts to screen size.<br>
             - Still define in container so content is centered.<br><br>
-            
+
             Row the container [yesterday it was opposite].<br><br>
-            
-            Make a layout:<br>
+
+            <strong>Make a layout:</strong><br>
             - Top bar with contact information.<br>
             - Header: left side logo, right side social media icon.<br><br>
-            
-            Photo text semantic web:<br>
+
+            <strong>Photo text semantic web:</strong><br>
             - Text in center [container wise].<br><br>
-            
-            2 sections of row:<br>
+
+            <strong>2 sections of row:</strong><br>
             - Bg grey.<br>
             - Right image.<br>
             - Left side text.<br><br>
-            
+
             Row3 change.<br><br>
-            
-            Row4: 3 boxes with image and text:<br>
+
+            <strong>Row4: 3 boxes with image and text:</strong><br>
             - Bg color any.<br>
             - Footer: 4 sections - 1 logo, 2 nav links, 3 about us, 4 contact us.<br>
             - Last footer copyright.<br><br>
-            
-            Home task:<br><br>
-            
-            Down menu:<br>
+
+            <strong>Home task:</strong><br><br>
+
+            <strong>Down menu:</strong><br>
             - Positioning in CSS:<br>
             - Relative.<br>
             - Fixed.<br>
         </p>
-            <div class="button-container">
-                <button class="action-button"><a href="day3/index.html">task1</a></button>
-            </div>
-            <div class="button-container">
-                <button class="action-button"><a href="day_3_task2/index.html">task2</a></button>
-            </div>
-    
-            
+        <div class="button-container">
+            <button class="action-button"><a href="day3/index.html">Task 1</a></button>
+            <button class="action-button"><a href="day_3_task2/index.html">Task 2</a></button>
+        </div>
     </div>
-    
 </body>
 </html>

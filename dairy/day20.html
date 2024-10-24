@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Diary - Day 20</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 500px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #a6c8ea;
+        }
+        .content-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        p {
+            line-height: 1.8;
+            color: #424242;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        p strong {
+            color: #0d47a1;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .action-button {
+            padding: 12px 25px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .action-button:hover {
+            background-color: #0056b3;
+        }
+        .action-button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .content-box {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <h1>Day 20 - Robots.txt Explained</h1>
+        <p>
+            <strong>Introduction:</strong> <br>
+            The <strong>robots.txt</strong> file is a crucial component of a website's infrastructure. It is a simple text file placed in the root directory of a website that provides directives to web crawlers and bots about which pages or sections of the site they are allowed or disallowed to crawl and index. <br><br>
+
+            This report outlines the purpose, structure, creation, and best practices for using a <strong>robots.txt</strong> file. <br><br>
+
+            <strong>Purpose of Robots.txt:</strong> <br>
+            - <strong>Control Crawling:</strong> Specify which parts of the website can be crawled by search engine bots. <br>
+            - <strong>Optimize Crawl Budget:</strong> Direct bots to the most important pages to ensure efficient use of the crawl budget. <br>
+            - <strong>Protect Sensitive Information:</strong> Prevent bots from accessing and indexing private or sensitive pages. <br>
+            - <strong>Manage Load on Server:</strong> Reduce server load by limiting the number of pages crawled simultaneously. <br><br>
+
+            <strong>Structure of Robots.txt:</strong> <br>
+            The <strong>robots.txt</strong> file consists of one or more groups of directives. Each group starts with a <strong>User-agent</strong> directive that specifies the target bot, followed by <strong>Disallow</strong> and/or <strong>Allow</strong> directives. <br><br>
+
+            - <strong>User-agent:</strong> Specifies which web crawler the following directives apply to. A wildcard (*) can be used to apply directives to all bots. <br>
+            - <strong>Disallow:</strong> Prevents the specified user-agent from crawling a particular URL path. <br>
+            - <strong>Allow:</strong> Allows the specified user-agent to crawl a particular URL path (used to override a disallow rule). <br>
+            - <strong>Sitemap:</strong> Specifies the location of the website’s XML sitemap (optional). <br><br>
+
+            <strong>Example of Robots.txt File:</strong> <br>
+            <code>
+                User-agent: * <br>
+                Disallow: /private/ <br>
+                Allow: /public/ <br>
+                Sitemap: https://abc.com/sitemap.xml <br>
+            </code> <br><br>
+
+            <strong>Creating a Robots.txt File:</strong> <br>
+            1. Open a Text Editor: Use a simple text editor like Notepad or any code editor. <br>
+            2. Write Directives: Add the appropriate directives based on your requirements. <br>
+            3. Save the File: Save the file as robots.txt. <br>
+            4. Upload to Root Directory: Upload the robots.txt file to the root directory of your website (e.g., https://abc.com/robots.txt). <br><br>
+
+            <strong>Best Practices:</strong> <br>
+            - Start Simple: Begin with basic rules and expand as needed. <br>
+            - Test Thoroughly: Use tools like Google’s Robots.txt Tester to ensure the file is correctly configured. <br>
+            - Keep it Updated: Regularly review and update the robots.txt file as the website changes. <br>
+            - Use Specific Directives: Be as specific as possible to avoid unintended blocking or allowing of URLs. <br>
+            - Avoid Blocking Essential Pages: Ensure important pages and resources (e.g., CSS, JS) are not blocked, as this can affect how search engines render and understand the site. <br>
+            - Monitor Web Crawler Activity: Use analytics and webmaster tools to monitor the effect of your robots.txt directives. <br><br>
+
+            <strong>Common Use Cases:</strong> <br>
+            - Prevent Crawling of Duplicate Content: Block search engine bots from crawling URLs with duplicate content. <br>
+            - Exclude Internal Search Results Pages: Prevent internal search results pages from being indexed to avoid cluttering search results. <br>
+            - Block Development or Staging Sites: Ensure development or staging environments are not crawled or indexed. <br>
+            - Hide Certain Files or Directories: Prevent bots from accessing directories like /cgi-bin/, /wp-admin/, or temporary files.
+        </p>
+    </div>
+</body>
+</html>

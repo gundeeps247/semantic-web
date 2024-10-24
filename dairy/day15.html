@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Diary - Day 15</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #e3f2fd;
+        }
+        .content-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #1565C0;
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        p {
+            line-height: 1.8;
+            color: #424242;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        p strong {
+            color: #1565C0;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-box {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <h1>Day 15</h1>
+        <p>
+            <strong>Queries:</strong><br>
+            Tables in database<br>
+            Attributes in datasets<br>
+            Limits, offset, group by<br><br>
+            
+            <strong>Select:</strong> Fetches data.<br>
+            <strong>From:</strong> Specifies the table.<br>
+            <strong>Where:</strong> Adds conditions.<br>
+            <strong>Offset:</strong> Skips rows.<br>
+            <strong>Limit:</strong> Sets a maximum number of rows.<br><br>
+            
+            These are SQL commands used to retrieve and manipulate data in a database. "Select" fetches data, "From" specifies the table, "Where" adds conditions, "Offset" skips rows, and "Limit" sets a maximum number of rows.<br><br>
+            
+            <strong>Models:</strong> Using machine learning models to compare actual versus predicted values.
+        </p>
+    </div>        
+</body>
+</html>

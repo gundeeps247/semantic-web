@@ -3,61 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Diary</title>
+    <title>Daily Diary - Day 8</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            
-        }
-        .content-box {
-            background-color: #fff;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            margin-top: 70px;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 1200px;
-            width: 100%;
         }
+
+        .content-box {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
         h1 {
             text-align: center;
             color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
+
         p {
-            line-height: 1.6;
+            line-height: 1.8;
             color: #555;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            padding: 0 10px;
         }
+
+        .highlight {
+            background-color: #e7f3ff;
+            border-left: 5px solid #007BFF;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+
         .button-container {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
         }
+
         .action-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: #ffffff;
             background-color: #007BFF;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
+
         .action-button:hover {
             background-color: #0056b3;
+            transform: translateY(-2px);
         }
+
         .action-button a {
             color: #fff;
             text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-box {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="content-box">
         <h1>Day 8</h1>
+        <p class="highlight">
+            QWL: Refers to Web Ontology Language (OWL) used to represent rich and complex knowledge about things, groups of things, and relations between things.
+        </p>
         <p>
-            QWL: Refers to Web Ontology Language (OWL) used to represent rich and complex knowledge about things, groups of things, and relations between things.<br>
             Web Ontology Language: A language used to define and instantiate Web ontologies.<br><br>
             Ontology - relationship between objects: Ontologies describe the relationships and hierarchy between different concepts.<br>
             2 versions OWL 2: There are two main versions of OWL - OWL and OWL 2, with OWL 2 being the latest version.<br><br>
@@ -69,7 +115,10 @@
             Complete structure is made: OWL provides a framework for creating a complete and interconnected data structure.<br><br>
             VOWL visual ontology: VOWL (Visual Notation for OWL Ontologies) is a tool for visually representing ontologies.<br>
         </p>
-        </div>        
+        <div class="button-container">
+            <button class="action-button"><a href="https://service.tib.eu/webvowl/#">Example</a></button>
             
+        </div>
+    </div>
 </body>
 </html>

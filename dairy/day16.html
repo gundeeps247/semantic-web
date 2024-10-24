@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Diary - Day 16</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 200px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #a6c8ea;
+        }
+        .content-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        p {
+            line-height: 1.8;
+            color: #424242;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        p strong {
+            color: #0d47a1;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .action-button {
+            padding: 12px 25px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .action-button:hover {
+            background-color: #0056b3;
+        }
+        .action-button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .content-box {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content-box">
+    <h1>Day 16</h1>
+    <h1>Understanding the 404 Error</h1>
+
+    <h2>What is a 404 Error?</h2>
+    <p>
+        A <strong>404 Error</strong> is an HTTP status code that indicates the server could not find the requested resource. 
+        This error typically occurs when a user tries to access a webpage that does not exist on the server, leading to the display of a "404 Not Found" error page.
+    </p>
+
+    <h2>How the 404 Error Works</h2>
+    <ol>
+        <li>
+            <strong>User Request:</strong> When a user types a URL in the web browser or clicks on a link, the browser sends a request to the server hosting the website to fetch that specific page.
+        </li>
+        <li>
+            <strong>Server Processing:</strong>
+            <ul>
+                <li>If the server finds the resource, it responds with a <code>200 OK</code> status, and the content is displayed in the browser.</li>
+                <li>If the server cannot find the resource, it responds with a <code>404 Not Found</code> status.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>404 Error Response:</strong> The server sends back a response indicating that the requested resource could not be found, along with an error page informing the user of the issue.
+        </li>
+    </ol>
+
+    <h2>Common Causes of 404 Errors</h2>
+    <ul>
+        <li><strong>Broken Links:</strong> A link points to a page that has been removed or renamed.</li>
+        <li><strong>Mistyped URLs:</strong> Users may mistype the URL in the browser.</li>
+        <li><strong>Deleted Pages:</strong> Pages that have been removed without a proper redirect.</li>
+        <li><strong>Changes in Website Structure:</strong> Structural changes can lead to broken links.</li>
+        <li><strong>Incorrectly Configured URLs:</strong> Unwanted keywords or parameters may lead to incorrect paths.</li>
+    </ul>
+
+    <h2>Handling 404 Errors</h2>
+    <ul>
+        <li>
+            <strong>Custom 404 Pages:</strong> Implement a custom 404 error page to guide users back to the homepage or relevant sections of the website.
+        </li>
+        <li>
+            <strong>Monitoring and Fixing Broken Links:</strong> Use tools like Google Search Console to identify and rectify broken links.
+        </li>
+        <li>
+            <strong>Redirects:</strong> Set up <code>301 redirects</code> for permanently removed or moved pages.
+        </li>
+        <li>
+            <strong>User-Friendly Navigation:</strong> Include a search bar or links to popular content on the custom 404 page.
+        </li>
+        <li>
+            <strong>Logging and Analytics:</strong> Monitor 404 errors for insights into user behavior and underlying issues.
+        </li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+        A <strong>404 error</strong> indicates that a requested resource could not be found. Understanding its workings and implementing strategies to handle it can improve user experience and maintain website integrity. By creating informative custom 404 pages and monitoring broken links, website owners can mitigate the impact of 404 errors.
+    </p>
+    <div class="button-container">
+        <a href="your-link-here" class="action-button">Explore More</a>
+    </div>
+</div>
+</body>
+</html>
